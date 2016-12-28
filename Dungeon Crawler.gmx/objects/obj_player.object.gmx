@@ -32,6 +32,7 @@ y_speed = 0;
 acceleration_speed = 2;
 jump_speed = 2;
 max_speed = 10;
+max_jump_speed = 20;
 </string>
           </argument>
         </arguments>
