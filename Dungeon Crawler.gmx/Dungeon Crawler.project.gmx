@@ -18,6 +18,8 @@
     <script>scripts\scr_movement_player.gml</script>
     <script>scripts\log.gml</script>
     <script>scripts\scr_jump.gml</script>
+    <script>scripts\scr_collision.gml</script>
+    <script>scripts\scr_reduce.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
