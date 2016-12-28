@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>//Player create
-//var x_speed = 0;
-//var y_speed = 0;
+x_speed = 0;
+y_speed = 0;
 
-playerSpeed = 5;
+acceleration_speed = 2;
+max_speed = 10;
 </string>
           </argument>
         </arguments>
