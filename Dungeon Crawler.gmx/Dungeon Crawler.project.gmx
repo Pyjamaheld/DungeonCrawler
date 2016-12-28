@@ -17,6 +17,7 @@
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_movement_player.gml</script>
     <script>scripts\log.gml</script>
+    <script>scripts\scr_jump.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>

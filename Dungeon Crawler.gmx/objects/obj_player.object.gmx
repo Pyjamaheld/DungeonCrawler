@@ -30,6 +30,7 @@ x_speed = 0;
 y_speed = 0;
 
 acceleration_speed = 2;
+jump_speed = 2;
 max_speed = 10;
 </string>
           </argument>
