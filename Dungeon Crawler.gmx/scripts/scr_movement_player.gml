@@ -35,5 +35,5 @@ log("Y pos = " + string(y), "");
         scr_jump();
     }
 }
-
+scr_collision();
 scr_move();
