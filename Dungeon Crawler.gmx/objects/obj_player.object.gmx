@@ -55,6 +55,7 @@ max_speed = 10;
           <argument>
             <kind>1</kind>
             <string>// Check and Move
+event_inherited();
 scr_movement_player();
 
 
