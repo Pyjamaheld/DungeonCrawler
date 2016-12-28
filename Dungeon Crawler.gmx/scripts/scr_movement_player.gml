@@ -22,13 +22,16 @@ if (xDirection == 1){
 
 if(xDirection == 0){
     x_speed = 0;
-    log("No Movement, reset xspeed.", "Movement Player");
+    //log("No Movement, reset xspeed.", "Movement Player");
 }
 
 if(jump_key == 1){
-    if not place_free(x,y + y_speed){
-        y_speed = 0
-    }else{
+
+log("Y pos = " + string(y), "");
+    if not place_free(x,y - y_speed){
+        log("jump pressed but space not free, y_speed = " + string(y_speed), "Movement Player");
+        y_speed = 0;
+    } else {
         scr_jump();
     }
 }
