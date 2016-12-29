@@ -23,6 +23,7 @@
     <script>scripts\scr_reduce.gml</script>
     <script>scripts\scr_avoid_clumping.gml</script>
     <script>scripts\scr_attack.gml</script>
+    <script>scripts\scr_friction.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -32,6 +33,7 @@
     <object>objects\object4</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_lifeform</object>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>
