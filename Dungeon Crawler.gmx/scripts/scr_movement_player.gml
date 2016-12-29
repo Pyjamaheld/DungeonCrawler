@@ -8,8 +8,8 @@ xDirection = right_key - left_key;
 
 if(y_speed < max_jump_speed){
     y_speed += grav;
-    log("New Y_speed after +grav = " + string(y_speed), log_class_name);
-    log("Max Jump Speed = " + string(max_jump_speed), log_class_name);
+    //log("New Y_speed after +grav = " + string(y_speed), log_class_name);
+    //log("Max Jump Speed = " + string(max_jump_speed), log_class_name);
 }
 
 //Move Player

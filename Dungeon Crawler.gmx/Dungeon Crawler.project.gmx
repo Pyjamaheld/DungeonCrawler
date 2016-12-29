@@ -27,7 +27,6 @@
     <object>objects\obj_floor</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_collision</object>
-    <object>objects\object4</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>
