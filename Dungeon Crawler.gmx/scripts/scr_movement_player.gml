@@ -22,6 +22,10 @@ if (xDirection == -1){
     }*/
     
     x_speed = xDirection * max_speed;
+    
+    face_dir = xDirection;
+    
+    scr_get_dir();
 }
 
 if (xDirection == 1){
@@ -31,20 +35,29 @@ if (xDirection == 1){
     }*/
     
     x_speed = xDirection * max_speed;
+    
+    face_dir = xDirection;
+    
+    scr_get_dir();
 }
 
 if(xDirection == 0){
     x_speed = 0;
     //log("No Movement, reset xspeed.", log_class_name);
+    
+    scr_get_idle_dir();
 }
 
 if(jump_key == 1){
-
     log("Y pos = " + string(y), log_class_name);
     
     if(place_meeting(x, y + 1, obj_collision)){
         y_speed = jump_key * -jump_speed;
     }
+    
+    xDirection = 2;
+    
+    scr_get_dir();
 }
 
 scr_collision();
