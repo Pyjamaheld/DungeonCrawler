@@ -23,12 +23,9 @@
     <script>scripts\scr_reduce.gml</script>
     <script>scripts\scr_avoid_clumping.gml</script>
     <script>scripts\scr_attack.gml</script>
-<<<<<<< HEAD
     <script>scripts\scr_friction.gml</script>
-=======
     <script>scripts\scr_get_idle_dir.gml</script>
     <script>scripts\scr_get_dir.gml</script>
->>>>>>> origin/master
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
