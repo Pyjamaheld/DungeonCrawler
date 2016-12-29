@@ -21,6 +21,10 @@ if (xDirection == -1){
         log("Left clicked, new X Position = " + string(x), log_class_name);
     }*/
     
+    if(scr_check_if_in_air()){
+        image_speed = 0;
+    }
+    
     x_speed = xDirection * max_speed;
     
     face_dir = xDirection;
@@ -34,6 +38,10 @@ if (xDirection == 1){
         log("Right clicked, new X Position = " + string(x), log_class_name);
     }*/
     
+    if(scr_check_if_in_air()){
+        image_speed = 0;
+    }
+    
     x_speed = xDirection * max_speed;
     
     face_dir = xDirection;
@@ -44,7 +52,7 @@ if (xDirection == 1){
 if(xDirection == 0){
     x_speed = 0;
     //log("No Movement, reset xspeed.", log_class_name);
-    
+    image_speed = 0;
     scr_get_idle_dir();
 }
 
@@ -56,7 +64,6 @@ if(jump_key == 1){
     }
     
     xDirection = 2;
-    
     scr_get_dir();
 }
 
