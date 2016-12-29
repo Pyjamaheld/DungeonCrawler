@@ -29,12 +29,12 @@
 x_speed = 0;
 y_speed = 0;
 
-acceleration_speed = 2;
+//acceleration_speed = 0.5;
 jump_speed = 7;
-max_speed = 10;
+max_speed = 6;
 max_jump_speed = 10;
 
-grav = 0.2;
+grav = 0.25;
 </string>
           </argument>
         </arguments>
