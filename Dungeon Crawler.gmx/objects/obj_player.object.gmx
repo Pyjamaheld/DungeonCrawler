@@ -34,6 +34,8 @@ jump_speed = 7;
 max_speed = 6;
 max_jump_speed = 10;
 
+face_dir = 0;
+
 grav = 0.27;
 
 image_speed = 0;

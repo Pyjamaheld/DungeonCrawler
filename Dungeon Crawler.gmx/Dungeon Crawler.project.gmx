@@ -23,6 +23,8 @@
     <script>scripts\scr_reduce.gml</script>
     <script>scripts\scr_avoid_clumping.gml</script>
     <script>scripts\scr_attack.gml</script>
+    <script>scripts\scr_get_idle_dir.gml</script>
+    <script>scripts\scr_get_dir.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -36,6 +38,11 @@
   <rooms name="rooms">
     <room>rooms\rm_1</room>
   </rooms>
+  <constants number="3">
+    <constant name="RIGHT">1</constant>
+    <constant name="UP">2</constant>
+    <constant name="LEFT">-1</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
