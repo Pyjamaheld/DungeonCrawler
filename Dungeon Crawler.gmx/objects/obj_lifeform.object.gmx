@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 1
+            <string>hp = 40;
 x_speed = 0;
 y_speed = 0;
 </string>

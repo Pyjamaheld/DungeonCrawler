@@ -28,6 +28,22 @@
             <string>///Global Stats
 
 global.total_coins = 0;
+
+global.coin_exp = 4;
+
+global.enemy_exp = 15;
+
+global.max_exp = 10;
+
+global.player_exp = 0;
+
+global.max_dmg = 5;
+
+global.min_dmg = 0;
+
+global.player_level = 0;
+
+global.facing_dir = 0;
 </string>
           </argument>
         </arguments>

@@ -26,17 +26,64 @@
           <argument>
             <kind>1</kind>
             <string>{
-    var scoreText = "Coins: " + string(global.total_coins);
-    var scale = 3;
-    var txt_x = 700;
-    var txt_y = 20;
-    var txt_color_main = c_blue;
+    var scoreText = "X" + string(global.total_coins);
+    var scale = 2;
+    var txt_x = 40;
+    var txt_y = 120;
+    var txt_color_main = c_black;
+    var txt_color_second = c_yellow;
+    var spr_w = 50;
+    var spr_h = 50;
+    
+    draw_sprite_stretched(spr_coin, 0, txt_x - 40, txt_y - 10, spr_w, spr_h);
+    //draw_sprite(spr_coin, 0, txt_x - 35, txt_y - 2);
+    draw_text_transformed(txt_x, txt_y, scoreText, scale, scale, image_angle);
+    draw_text_transformed_colour(txt_x+2, txt_y, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y+2, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y, scoreText, scale, scale, image_angle, txt_color_second, txt_color_second, txt_color_second, txt_color_second, 1);
+    
+    //EXP and Stats
+    
+    //Level
+    var scoreText = "Player Level: " + string(global.player_level);
+    var scale = 2;
+    var txt_x = 10;
+    var txt_y = 10;
+    var txt_color_main = c_black;
     var txt_color_second = c_white;
     
     draw_text_transformed(txt_x, txt_y, scoreText, scale, scale, image_angle);
-    draw_text_transformed_colour(txt_x+1, txt_y, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
-    draw_text_transformed_colour(txt_x, txt_y+1, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x+2, txt_y, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y+2, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
     draw_text_transformed_colour(txt_x, txt_y, scoreText, scale, scale, image_angle, txt_color_second, txt_color_second, txt_color_second, txt_color_second, 1);
+    
+    
+    //EXP
+    var scoreText = "EXP: " + string(global.player_exp) + " / " + string(global.max_exp);
+    var scale = 2;
+    var txt_x = 400;
+    var txt_y = 10;
+    var txt_color_main = c_black;
+    var txt_color_second = c_purple;
+    
+    draw_text_transformed(txt_x, txt_y, scoreText, scale, scale, image_angle);
+    draw_text_transformed_colour(txt_x+2, txt_y, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y+2, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y, scoreText, scale, scale, image_angle, txt_color_second, txt_color_second, txt_color_second, txt_color_second, 1);
+    
+
+    //Min / Max DMG
+    var scoreText = "DMG: " + string(global.min_dmg) + " - " + string(global.max_dmg);
+    var scale = 2;
+    var txt_x = 10;
+    var txt_y = 60;
+    var txt_color_main = c_black;
+    var txt_color_second = c_red;
+    
+    draw_text_transformed(txt_x, txt_y, scoreText, scale, scale, image_angle);
+    draw_text_transformed_colour(txt_x+2, txt_y, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y+2, scoreText, scale, scale, image_angle, txt_color_main, txt_color_main, txt_color_main, txt_color_main, 1);
+    draw_text_transformed_colour(txt_x, txt_y, scoreText, scale, scale, image_angle, txt_color_second, txt_color_second, txt_color_second, txt_color_second, 1);    
 
 }
 </string>

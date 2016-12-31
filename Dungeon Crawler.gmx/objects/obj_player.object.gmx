@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obj_lifeform</parentName>
   <maskName>spr_player_mask</maskName>
   <events>
@@ -68,6 +68,8 @@ scr_movement_player();
 if (action_key){
     scr_attack();
 }
+
+scr_exp_control();
 </string>
           </argument>
         </arguments>
@@ -97,6 +99,8 @@ if (!other.coin_collected){
     //global.total_coins = global.total_coins + 3 * 999;
     
     global.total_coins++;
+    
+    global.player_exp += global.coin_exp;
     
     with other{
         coin_collected = 1;

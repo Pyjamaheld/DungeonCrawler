@@ -2,6 +2,7 @@
 scr_input();
 
 var log_class_name = "Movement Player";
+var log_level = 0;
 
 xDirection = right_key - left_key;
 //log("xDirection = " + string(xDirection), log_class_name);
@@ -57,7 +58,7 @@ if(xDirection == 0){
 }
 
 if(jump_key == 1){
-    log("Y pos = " + string(y), log_class_name);
+    log("Y pos = " + string(y), log_class_name, log_level);
     
     if(place_meeting(x, y + 1, obj_collision)){
         y_speed = jump_key * -jump_speed;
