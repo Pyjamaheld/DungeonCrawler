@@ -30,15 +30,45 @@ x_speed = 0;
 y_speed = 0;
 
 //acceleration_speed = 2;
-jump_speed = 6;
-max_speed = 3;
-max_jump_speed = 10;
+jump_speed = 1.75;
+max_speed = 2.75;
+max_jump_speed = 4.5;
 
 face_dir = 0;
 
-grav = 0.27;
+//grav = 0.27;
+grav = 0.35;
 
 image_speed = 0;
+
+jumped = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Reset Jump
+
+log("Jumped reset to = " + string(jumped), "Alarm", 1);
+
+jumped = false;
 </string>
           </argument>
         </arguments>
