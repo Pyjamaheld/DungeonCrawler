@@ -6,16 +6,20 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_block</sprite>
     <sprite>sprites\spr_floor</sprite>
     <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_player_right</sprite>
-    <sprite>sprites\spr_player_right_idle</sprite>
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_coin</sprite>
-    <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_left_idle</sprite>
-    <sprite>sprites\spr_player_mask</sprite>
+    <sprites name="Player Sprites">
+      <sprite>sprites\spr_player_mask</sprite>
+      <sprite>sprites\spr_player_right_idle</sprite>
+      <sprite>sprites\spr_player_right</sprite>
+      <sprite>sprites\spr_player_left_idle</sprite>
+      <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_jump</sprite>
+      <sprite>sprites\spr_jump</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -41,7 +45,6 @@
     <object>objects\obj_floor</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_collision</object>
-    <object>objects\object4</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_lifeform</object>
     <object>objects\obj_enemy</object>

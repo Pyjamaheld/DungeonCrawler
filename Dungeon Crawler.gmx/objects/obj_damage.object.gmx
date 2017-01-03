@@ -96,7 +96,7 @@ if !(other.id == creator){
     var damage = round(random_range(min_dmg, max_dmg));
     
     var other_y = other.y - other.sprite_height;
-    var player_y = y - player_spr_height;
+    var player_y = y - obj_player.sprite_height;
     
     if(other.x &gt; x ){
         //Hit from the left
