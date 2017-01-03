@@ -10,11 +10,11 @@ switch (face_dir){
         log("Face = Right", log_class_name, log_level);
     break;
     
-    case UP:
+/*    case UP:
         //sprite_index = spr_player_right_idle; 
         sprite_index = spr_player_right;
         log("Face = Up", log_class_name, log_level);
-    break;
+    break;*/
     
     case LEFT:
         //sprite_index = spr_player_right_idle; 

@@ -14,6 +14,8 @@ if (place_meeting(x,y+y_speed,obj_collision))
     while(!place_meeting(x,y+sign(y_speed),obj_collision))
     {
         y += sign(y_speed);
+        
+        log("Falling  yspeed = " + string(y_speed), "Collision", 1);
     }
     y_speed = 0;
 }

@@ -42,6 +42,8 @@ alarm[0] = 1;
 player_spr_height = 21;
 
 face = 0;
+
+log("Damage Created", "Damage", 1);
 </string>
           </argument>
         </arguments>
@@ -65,6 +67,8 @@ face = 0;
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
+
+global.player_state = states_player.normal;
 </string>
           </argument>
         </arguments>

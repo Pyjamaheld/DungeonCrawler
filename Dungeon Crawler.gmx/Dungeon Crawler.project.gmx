@@ -17,8 +17,8 @@
       <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_left_idle</sprite>
       <sprite>sprites\spr_player_left</sprite>
-      <sprite>sprites\spr_jump</sprite>
-      <sprite>sprites\spr_jump1</sprite>
+      <sprite>sprites\spr_player_jump_right</sprite>
+      <sprite>sprites\spr_player_jump_left</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -26,38 +26,60 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_input.gml</script>
-    <script>scripts\scr_move.gml</script>
-    <script>scripts\scr_movement_player.gml</script>
-    <script>scripts\log.gml</script>
-    <script>scripts\scr_collision.gml</script>
-    <script>scripts\scr_reduce.gml</script>
-    <script>scripts\scr_avoid_clumping.gml</script>
-    <script>scripts\scr_attack.gml</script>
-    <script>scripts\scr_friction.gml</script>
-    <script>scripts\scr_get_idle_dir.gml</script>
-    <script>scripts\scr_get_dir.gml</script>
-    <script>scripts\scr_check_if_in_air.gml</script>
-    <script>scripts\scr_exp_control.gml</script>
+    <scripts name="Player">
+      <script>scripts\scr_player_normal_movement.gml</script>
+      <script>scripts\scr_player_attack.gml</script>
+    </scripts>
+    <scripts name="Global">
+      <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_move.gml</script>
+      <script>scripts\log.gml</script>
+      <script>scripts\scr_exp_control.gml</script>
+      <script>scripts\scr_get_player_state.gml</script>
+    </scripts>
+    <scripts name="Helper">
+      <script>scripts\scr_collision.gml</script>
+      <script>scripts\scr_check_if_in_air.gml</script>
+      <script>scripts\scr_friction.gml</script>
+      <script>scripts\scr_get_idle_dir.gml</script>
+      <script>scripts\scr_reduce.gml</script>
+      <script>scripts\scr_avoid_clumping.gml</script>
+      <script>scripts\scr_get_dir.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_player</object>
-    <object>objects\obj_floor</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_collision</object>
-    <object>objects\obj_damage</object>
-    <object>objects\obj_lifeform</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_write_stats</object>
-    <object>objects\obj_global_vars</object>
-    <object>objects\obj_coin</object>
+    <objects name="Player">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Room">
+      <object>objects\obj_floor</object>
+      <object>objects\obj_wall</object>
+    </objects>
+    <objects name="Items">
+      <object>objects\obj_coin</object>
+    </objects>
+    <objects name="Actions">
+      <object>objects\obj_damage</object>
+    </objects>
+    <objects name="Helper and Global">
+      <object>objects\obj_global_vars</object>
+      <object>objects\obj_write_stats</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\obj_enemy</object>
+    </objects>
+    <objects name="Parents">
+      <object>objects\obj_collision</object>
+      <object>objects\obj_lifeform</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>
   </rooms>
-  <constants number="3">
+  <constants number="4">
+    <constant name="JUMP_LEFT">-2</constant>
     <constant name="RIGHT">1</constant>
-    <constant name="UP">2</constant>
+    <constant name="JUMP_RIGHT">2</constant>
     <constant name="LEFT">-1</constant>
   </constants>
   <help>

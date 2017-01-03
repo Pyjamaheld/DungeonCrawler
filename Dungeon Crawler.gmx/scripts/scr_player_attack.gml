@@ -1,3 +1,4 @@
+// If Attack Key is pressed
 
 if(sprite_index == spr_player_left || sprite_index == spr_player_left_idle){
     var damage_spr = instance_create(x-10, y, obj_damage);
@@ -6,3 +7,7 @@ if(sprite_index == spr_player_left || sprite_index == spr_player_left_idle){
 }
 
 damage_spr.creator = id;
+
+
+
+
