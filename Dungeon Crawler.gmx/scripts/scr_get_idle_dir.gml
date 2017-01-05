@@ -7,6 +7,7 @@ switch (face_dir){
     case RIGHT:
         //sprite_index = spr_player_right_idle; 
         sprite_index = spr_player_right_idle;
+        image_xscale = 1;
         log("Face = Right", log_class_name, log_level);
     break;
     
@@ -17,8 +18,10 @@ switch (face_dir){
     break;*/
     
     case LEFT:
-        //sprite_index = spr_player_right_idle; 
-        sprite_index = spr_player_left_idle;
+        //sprite_index = spr_player_left_idle;
+        sprite_index = spr_player_right_idle;
+        
+        image_xscale = -1;
         log("Face = Left", log_class_name, log_level);
     break;
 }

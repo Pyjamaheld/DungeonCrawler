@@ -12,13 +12,16 @@
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_coin</sprite>
     <sprites name="Player Sprites">
-      <sprite>sprites\spr_player_mask</sprite>
-      <sprite>sprites\spr_player_right_idle</sprite>
-      <sprite>sprites\spr_player_right</sprite>
-      <sprite>sprites\spr_player_left_idle</sprite>
-      <sprite>sprites\spr_player_left</sprite>
-      <sprite>sprites\spr_player_jump_right</sprite>
-      <sprite>sprites\spr_player_jump_left</sprite>
+      <sprites name="Move">
+        <sprite>sprites\spr_player_right</sprite>
+        <sprite>sprites\spr_player_jump_right</sprite>
+        <sprite>sprites\spr_player_mask</sprite>
+        <sprite>sprites\spr_player_right_idle</sprite>
+      </sprites>
+      <sprites name="Attack">
+        <sprite>sprites\spr_player_attack_sword</sprite>
+        <sprite>sprites\spr_player_attack_hitbox</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">

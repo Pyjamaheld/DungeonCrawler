@@ -72,3 +72,11 @@ if(jump_held_key == 1 && jumped == true){
 }
 
 scr_get_dir();
+
+if(x_speed > 0){
+    image_xscale = 1;
+}
+
+if(x_speed < 0){
+    image_xscale = -1;
+}
