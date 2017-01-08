@@ -44,10 +44,13 @@
       <script>scripts\scr_collision.gml</script>
       <script>scripts\scr_check_if_in_air.gml</script>
       <script>scripts\scr_friction.gml</script>
+      <script>scripts\scr_friction_lifeforms.gml</script>
       <script>scripts\scr_get_idle_dir.gml</script>
       <script>scripts\scr_reduce.gml</script>
       <script>scripts\scr_avoid_clumping.gml</script>
       <script>scripts\scr_get_dir.gml</script>
+      <script>scripts\scr_animation_hit_frame.gml</script>
+      <script>scripts\scr_animation_end.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

@@ -1,7 +1,7 @@
 ///scr_get_dir
 
 var log_class_name = "Get Dir";
-var log_level = 1;
+var log_level = 0;
 
 switch (xDirection){
     case RIGHT:

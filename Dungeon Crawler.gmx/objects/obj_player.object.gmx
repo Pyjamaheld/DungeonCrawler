@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
-  <parentName>obj_lifeform</parentName>
+  <parentName>self</parentName>
   <maskName>spr_player_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -42,6 +42,12 @@ grav = 0.35;
 image_speed = 0;
 
 jumped = false;
+
+/*ids[0] = instance_find(obj_player, 0);
+
+log("Player created with id: " + string(ids[0]), "Creation", 1);
+
+*/
 </string>
           </argument>
         </arguments>
@@ -99,6 +105,7 @@ scr_get_player_state();
 
 scr_collision();
 scr_move();
+scr_friction();
 scr_exp_control();
 </string>
           </argument>

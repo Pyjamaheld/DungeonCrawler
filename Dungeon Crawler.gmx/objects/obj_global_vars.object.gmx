@@ -46,6 +46,8 @@ global.player_level = 0;
 global.facing_dir = 0;
 
 global.player_state = states_player.normal;
+
+global.reset_hit = false;
 </string>
           </argument>
         </arguments>

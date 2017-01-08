@@ -15,6 +15,23 @@
 enum states_player {
    
     attack, normal
+}
+
+var i;
+var ids;
+
+for(i = 0; i &lt; instance_number(obj_lifeform); i++){
+    ids[i] = instance_find(obj_lifeform, i);
+}
+
+var j;
+var total_ids = array_length_1d(ids);
+
+log("Instances in Room: " + string(total_ids), "Room", 1);
+log("Following list: ", "Room", 1);
+
+for(j = 0; j &lt; total_ids; j++){
+    log("Instance: " + string(ids[j]), "Room", 1);
 }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

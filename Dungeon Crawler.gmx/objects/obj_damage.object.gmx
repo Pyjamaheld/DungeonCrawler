@@ -3,7 +3,7 @@
   <spriteName>spr_player_attack_hitbox</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>-1000</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -37,19 +37,17 @@ if(level_multiplicator == 0){
 max_dmg = 5 * level_multiplicator;
 min_dmg = 1 * level_multiplicator;
 
-alarm[0] = 1;
-
 player_spr_height = 21;
 
 face = 0;
 
-log("Damage Created", "Damage", 1);
+log("Damage Created", "Damage", 0);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="8" enumb="77">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -67,76 +65,6 @@ log("Damage Created", "Damage", 1);
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
-
-global.player_state = states_player.normal;
-
-log("Hitbox destroyes, state back to normal", "Test Alarm Dmg", 1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_lifeform">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Damage and Knockback
-// Damage
-var log_class_name = "Obj Lifeform Collision";
-var log_level = 1;
-
-if !(other.id == creator){
-    var damage = round(random_range(min_dmg, max_dmg));
-    
-    var other_y = other.y - other.sprite_height;
-    var player_y = y - obj_player.sprite_height;
-    
-    if(other.x &gt; x ){
-        //Hit from the left
-       face = 1;
-    }else if(other.x &lt; x ){
-        //Hit from the right
-       face = -1;       
-    }
-    
-    global.facing_dir = face;
-    
-    if(player_y &gt;= other_y){
-        log("Is " + string(player_y) + " &gt;= " + string(other_y), log_class_name, 0);
-
-        other.x_speed = knockback * face;
-        other.hp -= damage;
-     
-        log("X_speed = " + string(other.x_speed), log_class_name, log_level); 
-        log("Damage done = " + string(damage), log_class_name, log_level); 
-        log("Obj HP = " + string(other.hp), log_class_name, log_level);  
-
-    }
-
-    
-    // Knockback
-    /*log("Other X = " + string(other.x) + " minus  X = " + string(x), log_class_name, log_level);
-    xx = 1/(other.x - x);
-    yy = 1/(other.y - y);
-    other.x_speed += xx*knockback;
-    other.y_speed += yy*knockback;*/
-}
-
-
-
 </string>
           </argument>
         </arguments>
