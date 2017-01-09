@@ -1,2 +1,2 @@
-x += x_speed;
-y += y_speed;
+x += hspd;
+y += vspd;

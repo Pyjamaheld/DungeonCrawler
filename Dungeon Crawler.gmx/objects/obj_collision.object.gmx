@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x_speed = 0;
-y_speed = 0;
+            <string>hspd = 0;
+vspd = 0;
 </string>
           </argument>
         </arguments>
@@ -50,7 +50,7 @@ y_speed = 0;
           <argument>
             <kind>1</kind>
             <string>///collision
-scr_collision()
+scr_check_collision()
 </string>
           </argument>
         </arguments>

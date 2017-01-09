@@ -103,7 +103,7 @@ jumped = false;
 
 scr_get_player_state();
 
-scr_collision();
+//scr_collision();
 scr_move();
 scr_friction();
 scr_exp_control();

@@ -12,15 +12,15 @@
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_coin</sprite>
     <sprites name="Player Sprites">
-      <sprites name="Move">
-        <sprite>sprites\spr_player_right</sprite>
-        <sprite>sprites\spr_player_jump_right</sprite>
-        <sprite>sprites\spr_player_mask</sprite>
-        <sprite>sprites\spr_player_right_idle</sprite>
-      </sprites>
       <sprites name="Attack">
         <sprite>sprites\spr_player_attack_sword</sprite>
         <sprite>sprites\spr_player_attack_hitbox</sprite>
+      </sprites>
+      <sprites name="Move">
+        <sprite>sprites\spr_player_move</sprite>
+        <sprite>sprites\spr_player_collision_mask</sprite>
+        <sprite>sprites\spr_player_stand</sprite>
+        <sprite>sprites\spr_player_jump</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -30,32 +30,30 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
-      <script>scripts\scr_player_normal_movement.gml</script>
-      <script>scripts\scr_player_attack.gml</script>
+      <script>scripts\scr_check_ground.gml</script>
+      <script>scripts\scr_check_right.gml</script>
+      <script>scripts\scr_check_collision.gml</script>
+      <script>scripts\scr_check_jump.gml</script>
+      <script>scripts\scr_check_attack.gml</script>
+      <script>scripts\scr_check_stand.gml</script>
+      <script>scripts\scr_check_left.gml</script>
+      <script>scripts\scr_set_sprite.gml</script>
     </scripts>
     <scripts name="Global">
       <script>scripts\scr_get_input.gml</script>
-      <script>scripts\scr_move.gml</script>
       <script>scripts\log.gml</script>
       <script>scripts\scr_exp_control.gml</script>
-      <script>scripts\scr_get_player_state.gml</script>
     </scripts>
     <scripts name="Helper">
-      <script>scripts\scr_collision.gml</script>
-      <script>scripts\scr_check_if_in_air.gml</script>
-      <script>scripts\scr_friction.gml</script>
       <script>scripts\scr_friction_lifeforms.gml</script>
-      <script>scripts\scr_get_idle_dir.gml</script>
-      <script>scripts\scr_reduce.gml</script>
       <script>scripts\scr_avoid_clumping.gml</script>
-      <script>scripts\scr_get_dir.gml</script>
       <script>scripts\scr_animation_hit_frame.gml</script>
       <script>scripts\scr_animation_end.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
-      <object>objects\obj_player</object>
+      <object>objects\obj_player_new</object>
     </objects>
     <objects name="Room">
       <object>objects\obj_floor</object>
