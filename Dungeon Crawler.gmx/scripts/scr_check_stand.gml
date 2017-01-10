@@ -8,20 +8,25 @@ if(attacking){
     
     state = states_player.standing;
     
-    //slow down movement if no keys are pressed
-    if( dir == LEFT){
-        if(hspd < 0){
-            hspd += fric;
-        }else{
-            hspd = 0;
-        }
-    }
+   
     
-    if( dir == RIGHT){
-        if(hspd > 0){
-            hspd -= fric;
-        }else{
-            hspd = 0;
+    if(!player_hit){
+         log ("Setting hspd to zero, no keys detected", "Check Stand", 1);
+        //slow down movement if no keys are pressed
+        if( dir == LEFT){
+            if(hspd < 0){
+                hspd += fric;
+            }else{
+                hspd = 0;
+            }
+        }
+        
+        if( dir == RIGHT){
+            if(hspd > 0){
+                hspd -= fric;
+            }else{
+                hspd = 0;
+            }
         }
     }
 }

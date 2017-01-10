@@ -117,6 +117,7 @@ draw_text ( 860, 170, "Falling: " + string(obj_player_new.falling));
 draw_text ( 860, 190, "Hspd: " + string(obj_player_new.hspd));
 draw_text ( 860, 210, "Vspd: " + string(obj_player_new.vspd));
 draw_text ( 860, 230, "Dir: " + string(obj_player_new.dir));
+draw_text ( 860, 260, "HP: " + string(obj_player_new.hp));
 </string>
           </argument>
         </arguments>

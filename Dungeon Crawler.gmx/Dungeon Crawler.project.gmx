@@ -50,6 +50,9 @@
       <script>scripts\scr_animation_hit_frame.gml</script>
       <script>scripts\scr_animation_end.gml</script>
     </scripts>
+    <scripts name="Enemy">
+      <script>scripts\scr_enemy_chase_player.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">

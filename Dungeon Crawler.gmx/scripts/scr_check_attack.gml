@@ -1,23 +1,22 @@
 // Check if attacking
+
+var log_class_name = "Check Attack";
+var log_level = 0;
+
 // If Attack Key is pressed
 if(action_key){
     state = states_player.attack;
-    log("Set state to attack: " + string(state), "Check attack", 1);
+    log("Set state to attack: " + string(state), log_class_name, log_level);
     attacking = true;
-    
-    /*sprite_index = spr_player_attack_sword;
-    //image_index = 0;
-    image_speed = 0.5;*/
 }
 
 if(attacking){
-    //log("Attacking", "Check Attack", 1);
     hspd = 0;
     
     //log("Image index = " + string(image_index), "Check attack", 1);
     
     if(image_index >= 4) && (image_index < 5) /*&& !attacking*/{
-        log("Creating Dmg Obj", "Check Attack", 1);
+        log("Creating Dmg Obj", log_class_name, log_level);
         //attacking = true;
         with(instance_create(x,y,obj_damage)){
             image_xscale = other.image_xscale;
@@ -28,15 +27,19 @@ if(attacking){
                     hit = true;
                     vspd = -10;
                     hspd = sign(x - other.x) * 4;
-                    //image_xscale = sign(x_speed);
-                    //image_speed = 0.1;
+                    
                     image_xscale = sign(hspd);
                     
-                    log("hspd = " + string(hspd), "Enemy", 1); 
+                    log("hspd = " + string(hspd), log_class_name, log_level); 
                     
                     hp -= damage;
-                    log("Damage done = " + string(damage), "Enemy", 1); 
-                    log("Obj HP = " + string(hp), "Enemy", 1);
+                    
+                    global.reset_hit_throwback = true;
+                    
+                    log("====================", log_class_name, 1);
+                    log("= Damage done : " + string(damage), log_class_name, 1); 
+                    log("= Obj HP : " + string(hp), log_class_name, 1);
+                    log("====================", log_class_name, 1);
                 }
             }
         }
@@ -46,7 +49,7 @@ if(attacking){
         state = states_player.standing;
         attacking = false;
         global.reset_hit = true;
-        log("Changed player state to standing", "Test", 1);
+        log("Changed player state to standing", log_class_name, 1);
     }
 }
 

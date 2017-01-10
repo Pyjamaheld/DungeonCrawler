@@ -57,7 +57,7 @@ hit = false;
             <kind>1</kind>
             <string>hit = false;
 global.reset_hit = false;
-log("reseted hit to false", "Alarm", 1);
+log("reseted hit to false", "Alarm", 0);
 </string>
           </argument>
         </arguments>

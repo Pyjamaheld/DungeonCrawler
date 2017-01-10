@@ -1,12 +1,15 @@
 // Check if on the ground
 
 var log_class_name = "Check Ground";
-var log_level = 1;
+var log_level = 0;
 
 if( place_meeting(x, y + 1, obj_collision)){
     //Touching ground
-    vspd = 0;
-    falling = false;
+    
+    if(!player_hit){
+        vspd = 0;
+        falling = false;
+    }
     
     //If want to jump
     if( jump_key ){

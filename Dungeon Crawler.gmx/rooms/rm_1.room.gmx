@@ -16,6 +16,10 @@ enum states_player {
     attack, ducking, running, walking, standing
 }
 
+enum states_enemy {
+    idle, chase
+}
+
 var i;
 var ids;
 

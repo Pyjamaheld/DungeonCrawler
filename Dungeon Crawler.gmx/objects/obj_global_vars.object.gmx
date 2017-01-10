@@ -44,6 +44,10 @@ global.min_dmg = 0;
 global.player_level = 0;
 
 global.reset_hit = false;
+
+global.reset_player_hit = false;
+
+global.reset_hit_throwback = false;
 </string>
           </argument>
         </arguments>
