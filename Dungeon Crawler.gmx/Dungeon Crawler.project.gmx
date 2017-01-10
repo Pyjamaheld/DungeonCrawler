@@ -7,8 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_floor</sprite>
-    <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_coin</sprite>
     <sprites name="Player Sprites">
@@ -23,9 +21,30 @@
         <sprite>sprites\spr_player_jump</sprite>
       </sprites>
     </sprites>
+    <sprites name="greenhills">
+      <sprite>sprites\spr_greenhill</sprite>
+      <sprite>sprites\greenhills_packet</sprite>
+    </sprites>
+    <sprites name="Room Sprites">
+      <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_thin_wall</sprite>
+    </sprites>
+    <sprites name="unused">
+      <sprite>sprites\spr_tree_2</sprite>
+      <sprite>sprites\spr_rock_1</sprite>
+      <sprite>sprites\spr_boulder</sprite>
+      <sprite>sprites\spr_snail</sprite>
+      <sprite>sprites\spr_rock_2</sprite>
+      <sprite>sprites\spr_panda_walking</sprite>
+      <sprite>sprites\spr_panda_attacking</sprite>
+      <sprite>sprites\spr_panda_walking_2</sprite>
+      <sprite>sprites\spr_tree_1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -61,6 +80,7 @@
     <objects name="Room">
       <object>objects\obj_floor</object>
       <object>objects\obj_wall</object>
+      <object>objects\obj_thin_wall</object>
     </objects>
     <objects name="Items">
       <object>objects\obj_coin</object>
@@ -81,6 +101,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\rm_1</room>
   </rooms>
   <constants number="4">
