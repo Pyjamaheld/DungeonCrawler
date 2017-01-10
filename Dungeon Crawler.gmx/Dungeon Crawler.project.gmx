@@ -19,6 +19,7 @@
         <sprite>sprites\spr_player_collision_mask</sprite>
         <sprite>sprites\spr_player_stand</sprite>
         <sprite>sprites\spr_player_jump</sprite>
+        <sprite>sprites\spr_player_front</sprite>
       </sprites>
     </sprites>
     <sprites name="greenhills">
@@ -34,17 +35,24 @@
       <sprite>sprites\spr_tree_2</sprite>
       <sprite>sprites\spr_rock_1</sprite>
       <sprite>sprites\spr_boulder</sprite>
-      <sprite>sprites\spr_snail</sprite>
       <sprite>sprites\spr_rock_2</sprite>
-      <sprite>sprites\spr_panda_walking</sprite>
-      <sprite>sprites\spr_panda_attacking</sprite>
-      <sprite>sprites\spr_panda_walking_2</sprite>
       <sprite>sprites\spr_tree_1</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_snail</sprite>
+      <sprite>sprites\spr_alien</sprite>
+      <sprites name="Panda">
+        <sprite>sprites\spr_panda_attacking</sprite>
+        <sprite>sprites\spr_panda_walking_2</sprite>
+        <sprite>sprites\spr_panda_walking</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
-    <background>background\background1</background>
+    <background>background\bk_stonewalls</background>
+    <background>background\bk_wasteland</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -101,6 +109,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room2</room>
     <room>rooms\room1</room>
     <room>rooms\rm_1</room>
   </rooms>
