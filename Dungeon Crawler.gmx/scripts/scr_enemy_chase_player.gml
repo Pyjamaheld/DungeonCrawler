@@ -5,6 +5,12 @@ var log_level = 0;
 
 dir = sign(obj_player_new.x - x);
 
+if(dir == -1){
+    image_xscale = -1;
+}else{
+    image_xscale = 1;
+}
+
 if(!global.reset_hit_throwback && !global.reset_player_hit){
     hspd = dir * 1.5;
 }
