@@ -58,6 +58,8 @@
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\scr_check_ground.gml</script>
+      <script>scripts\scr_check_wall_slide.gml</script>
+      <script>scripts\scr_check_wall_jump.gml</script>
       <script>scripts\scr_check_right.gml</script>
       <script>scripts\scr_check_collision.gml</script>
       <script>scripts\scr_check_jump.gml</script>
@@ -109,9 +111,10 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room3</room>
+    <room>rooms\rm_1</room>
     <room>rooms\room2</room>
     <room>rooms\room1</room>
-    <room>rooms\rm_1</room>
   </rooms>
   <constants number="4">
     <constant name="JUMP_LEFT">-2</constant>

@@ -29,7 +29,7 @@
 
 grav = 0.5;
 spd = 5;
-jspd = 2;
+jspd = 10;
 max_jheight = 5;
 hspd = 0;
 vspd = 0;
@@ -44,6 +44,9 @@ walkingMaxSpd = spd / 3;
 runningAcc = 0.2;
 runningMaxSpd = spd;
 terminalVelocity = 25;
+
+sliding = false;
+sliding_wall_spd = 0.5;
 
 // Initialize Variables Stats
 hp = 40;
@@ -132,6 +135,10 @@ log("Set Jumping false", "Alarm", 1);
     scr_check_ground();
     
     scr_check_jump();
+    
+    scr_check_wall_slide();
+    
+    scr_check_wall_jump();
 
     scr_check_right();
     
@@ -146,8 +153,6 @@ log("Set Jumping false", "Alarm", 1);
     scr_set_sprite();
     
     scr_check_attack();
-
-
 
 </string>
           </argument>

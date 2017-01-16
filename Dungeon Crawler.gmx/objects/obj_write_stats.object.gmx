@@ -118,6 +118,8 @@ draw_text ( 860, 190, "Hspd: " + string(obj_player_new.hspd));
 draw_text ( 860, 210, "Vspd: " + string(obj_player_new.vspd));
 draw_text ( 860, 230, "Dir: " + string(obj_player_new.dir));
 draw_text ( 860, 260, "HP: " + string(obj_player_new.hp));
+draw_text ( 860, 300, "X: " + string(obj_player_new.x) + " / Y: " + string(obj_player_new.y));
+
 </string>
           </argument>
         </arguments>
